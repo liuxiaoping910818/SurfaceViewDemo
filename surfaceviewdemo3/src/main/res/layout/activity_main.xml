@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.surfaceviewdemo3.MainActivity">
+
+    <com.example.android.surfaceviewdemo3.MySurfaceView
+        android:id="@+id/lucky_pan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:layout_centerInParent="true"
+
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_start"
+        android:layout_centerInParent="true"
+        android:src="@drawable/start"
+        />
+   <!-- <ImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+
+
+    />-->
+</RelativeLayout>
