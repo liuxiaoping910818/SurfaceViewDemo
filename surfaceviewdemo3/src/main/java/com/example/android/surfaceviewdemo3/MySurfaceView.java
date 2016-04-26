@@ -309,13 +309,13 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
     }
 
     /**
-     * 绘制icon
+     * 绘制icon :这块是最难理解的，
      * @param tmpAngle
      * @param
      */
     private void drawIcon(float tmpAngle, Bitmap bitmap) {
 
-        //y设置图片的宽度为直径的1/8
+        //y设置图片的宽度为直径的1/8，每一张图片所在位图都是一个正方形
         int imgWidth=mRadius/8;
         float angle= (float) ((tmpAngle+360/mItemCount/2)*Math.PI/180);
         //图片中心坐标
@@ -329,7 +329,7 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
 
     /**
      *
-     * 绘制每个盘块的文本
+     * 绘制每个盘块的文本：绘制思路：使用Path类进行绘制，具体方法里的参数说明可查看API
      * @param tmpAngle
      * @param sweepAngle
      * @param

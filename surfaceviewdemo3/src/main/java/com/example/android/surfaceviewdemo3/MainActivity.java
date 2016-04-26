@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (!mySurfaceView.isStart()){
 
-                    mySurfaceView.luckStart(1);
+                    mySurfaceView.luckStart();
                     mstart.setImageResource(R.drawable.stop);
                 }else {
 
