@@ -37,6 +37,7 @@ public class FishView extends SurfaceView
         holder = getHolder();
         holder.addCallback(this);
         hasSurface = false;
+        //初始化背景
         back = BitmapFactory.decodeResource(ctx.getResources()
                 , R.drawable.fishbg);
         fishs = new Bitmap[10];
